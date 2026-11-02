@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uaml-ab"
+version = "0.1.0"
+description = "Uncertainty-aware antibody binding models, benchmarks and sequence design"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+license = {text = "MIT"}
+dependencies = [
+  "numpy==1.26.0", "pandas==2.2.3", "scipy==1.13.1",
+  "PyYAML==6.0.2", "torch==2.9.0",
+]
+
+[project.optional-dependencies]
+benchmarks = ["scikit-learn==1.4.2", "joblib==1.3.2", "gpytorch==1.11", "torchbnn==1.2", "optuna==4.2.1"]
+hpo = ["optuna==4.2.1"]
+esm2 = ["h5py==3.12.1", "transformers==4.44.1", "tqdm==4.67.1"]
+
+[project.scripts]
+uaml-ab = "uaml_ab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

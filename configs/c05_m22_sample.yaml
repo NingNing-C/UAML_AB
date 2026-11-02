@@ -1,0 +1,153 @@
+global:
+  data_path: ../data/cases/c05_m22_sample.csv
+  dataset: Chen-2026-C05_M22_ED2_Sample
+  encoder: onehot
+  esm2_embedding_path: ../data/cache/c05_m22_sample.h5
+  label_col: binding_enrichment_adj
+  seq_col: mut_loci_seq
+  wt: HMSMQQVVSAGWERADLVGDAFDV
+  wt_vh: QVQLQESGGGLVQPGESLRLSCVGSGSSFGESTLSYYAVSWVRQAPGKGLEWLSIINAGGGDIDYADSVEGRFTISRDNSKETLYLQMTNLRVEDTGVYYCAKHMSMQQVVSAGWERADLVGDAFDVWGQGTMVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKRVEPKSC
+methods:
+  BNN:
+    batch_size: 32
+    hidden_size: 256
+    lr: 0.0009620288064658612
+    output_size: 2
+    weight_decay: 1.080423264844085e-06
+  BootstrapEnsemble:
+    batch_size: 32
+    hidden_size: 128
+    lr: 0.00015671898667021214
+    model_name: SimpleNN
+    num_models: 5
+    output_size: 2
+    weight_decay: 1.538089648128312e-05
+  CNN:
+    batch_size: 32
+    filter_size: 5
+    lr: 0.000582794578653764
+    num_filters: 32
+    output_size: 2
+    weight_decay: 3.933997533460382e-05
+  ConcreteDropout:
+    batch_size: 32
+    dropout_regularizer: 1.0e-05
+    epochs: 100
+    hidden_size: 128
+    lr: 0.0007369297625300667
+    num_samples: 10
+    output_size: 2
+    weight_decay: 3.4614010640866346e-05
+    weight_regularizer: 1.0e-06
+  Deterministic:
+    batch_size: 32
+    hidden_size: 128
+    lr: 0.00033043080534315457
+    output_size: 1
+    weight_decay: 8.188489853873195e-05
+  Evidential:
+    batch_size: 32
+    epochs: 100
+    hidden_size: 64
+    lr: 7.975021843373543e-05
+    output_size: 4
+    weight_decay: 7.111542291893585e-06
+  GP:
+    batch_size: 32
+    lr: 0.019933423371674676
+    model_name: GP
+    weight_decay: 1.4815439823368465e-05
+  MVE:
+    batch_size: 32
+    hidden_size: 256
+    lr: 0.000900891393422017
+    model_name: SimpleNN
+    output_size: 2
+    weight_decay: 4.716934037006745e-05
+  ModelArcEnsemble:
+    batch_size: 32
+    lr: 0.0009473978682356105
+    weight_decay: 8.148064231074466e-05
+  NeuralLinear:
+    batch_size: 32
+    epochs: 100
+    hidden_size: 128
+    lr: 2.8168296479366633e-05
+    n_layers: 3
+    num_samples: 20
+    output_size: 1
+    weight_decay: 1.647799470223034e-06
+  Linreg: {}
+encoding_overrides:
+  esm2:
+    methods:
+      BNN:
+        batch_size: 32
+        hidden_size: 256
+        lr: 0.0007771939212924859
+        output_size: 2
+        weight_decay: 3.480965746185682e-06
+      BootstrapEnsemble:
+        batch_size: 32
+        hidden_size: 256
+        lr: 0.0009840174345101484
+        model_name: SimpleNN
+        num_models: 5
+        output_size: 2
+        weight_decay: 1.259763071580365e-06
+      CNN:
+        batch_size: 32
+        filter_size: 5
+        lr: 0.00023442089734094498
+        num_filters: 32
+        output_size: 2
+        weight_decay: 7.687298875731914e-06
+      ConcreteDropout:
+        batch_size: 32
+        dropout_regularizer: 1.0e-05
+        epochs: 100
+        hidden_size: 256
+        lr: 0.0004005725438529762
+        num_samples: 10
+        output_size: 2
+        weight_decay: 4.4973961697331393e-05
+        weight_regularizer: 1.0e-06
+      Deterministic:
+        batch_size: 32
+        hidden_size: 256
+        lr: 0.0009633917572733239
+        output_size: 1
+        weight_decay: 3.932357308473448e-05
+      Evidential:
+        batch_size: 32
+        epochs: 100
+        hidden_size: 128
+        lr: 0.0009570778328352972
+        output_size: 4
+        weight_decay: 2.8008246878024348e-05
+      GP:
+        batch_size: 32
+        lr: 0.03020871059789284
+        model_name: GP
+        weight_decay: 3.770778259774914e-05
+      MVE:
+        batch_size: 32
+        hidden_size: 128
+        lr: 0.0009591441967683549
+        model_name: SimpleNN
+        output_size: 2
+        weight_decay: 2.2071244210661668e-05
+      ModelArcEnsemble:
+        batch_size: 32
+        lr: 0.0009782735389265804
+        weight_decay: 6.038281220763001e-06
+      NeuralLinear:
+        batch_size: 32
+        epochs: 100
+        hidden_size: 256
+        lr: 0.0005588071631778535
+        n_layers: 3
+        num_samples: 20
+        output_size: 1
+        weight_decay: 7.654477902140575e-05
+      Linreg: {}

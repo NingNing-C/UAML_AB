@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying UAML-AB manuscript when using this code."
+type: software
+title: "UAML-AB"
+authors:
+  - family-names: Chen
+    given-names: NingNing
+  - family-names: Kaiser
+    given-names: Lorenz
+license: MIT
+preferred-citation:
+  type: unpublished
+  title: "Uncertainty-aware machine learning guides multi-objective antibody engineering"
+  authors:
+    - family-names: Chen
+      given-names: NingNing
+    - family-names: Kaiser
+      given-names: Lorenz
+    - family-names: Yang
+      given-names: Huilin
+    - family-names: Lüthi
+      given-names: Elena
+    - family-names: "Martinolli D'Arcy"
+      given-names: Vittoria
+    - family-names: Reddy
+      given-names: "Sai T."
+  notes: "Conference submission manuscript; publication details were not supplied."

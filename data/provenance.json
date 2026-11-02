@@ -1,0 +1,29 @@
+[
+  {
+    "dataset": "Adams-2016-4420scFv_CDR1H",
+    "file": "data/cases/adams_cdr1h.csv",
+    "rows": 700,
+    "sha256": "20e8218d38932ee014549cced545245d507cb381783c15bbeeda72f5779e2d96",
+    "source_case": "Adams-2016/4420scFv_CDR1H",
+    "source_archive": "uncertainty_protein-Lorenz-2.zip",
+    "settings_source": "supplied config_onehot_updated.yaml and config_esm2_updated.yaml"
+  },
+  {
+    "dataset": "Adams-2016-4420scFv_CDR3H",
+    "file": "data/cases/adams_cdr3h.csv",
+    "rows": 376,
+    "sha256": "2794eacf1042db4f526458d4e6263b4e061df1a649301d7353c3272fb37ebd3d",
+    "source_case": "Adams-2016/4420scFv_CDR3H",
+    "source_archive": "uncertainty_protein-Lorenz-2.zip",
+    "settings_source": "supplied config_onehot_updated.yaml and config_esm2_updated.yaml"
+  },
+  {
+    "dataset": "Chen-2026-C05_M22_ED2_Sample",
+    "file": "data/cases/c05_m22_sample.csv",
+    "rows": 10000,
+    "sha256": "47dfcb18c2b1195ad5a86ab0e87abf31d7057846a3fc41cbd7435ecb4f1d3579",
+    "source_case": "Chen-2026/C05_M22_ED2_Sample",
+    "source_archive": "uncertainty_protein-Lorenz-2.zip",
+    "settings_source": "supplied config_onehot_updated.yaml and config_esm2_updated.yaml"
+  }
+]
