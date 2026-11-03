@@ -213,4 +213,4 @@ The original [MIT license](LICENSE) is retained.
 
 ## Contributors
 - **NingNing Chen** ([@NingNing-C](https://github.com/NingNing-C)), ETH Zurich
-- **Lorenz Kaiser** 
+- **Lorenz Kaiser** ([@lokaiser](https://github.com/lokaiser)), ETH Zurich
