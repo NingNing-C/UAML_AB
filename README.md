@@ -210,3 +210,7 @@ undefined-memory bug in Concrete Dropout regularization is corrected.
 
 Please cite the accompanying manuscript; metadata are in `CITATION.cff`.
 The original [MIT license](LICENSE) is retained.
+
+## Contributors
+- **NingNing Chen** ([@NingNing-C](https://github.com/NingNing-C)), ETH Zurich
+- **Lorenz Kaiser** 
