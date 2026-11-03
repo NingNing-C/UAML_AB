@@ -190,22 +190,6 @@ Relative dataset/cache paths resolve beside their YAML config, so commands work
 from other directories after installation. No import-path modifications or
 tracking-service account are required.
 
-## Tests and compatibility
-
-```bash
-python -m unittest discover -s tests -v
-```
-
-Optional-method tests skip when their dependencies are absent. Tests cover all
-reported methods, both feature representations, true unlabeled prediction,
-checkpoint restoration, shared splits/noise, source fingerprints and small
-GA/BO runs. CI runs core and optional-model installations.
-
-Read [configuration](docs/CONFIGURATION.md) and
-[reproducibility](docs/REPRODUCIBILITY.md) before comparing archived results.
-In particular, source training/stopping conventions remain explicit, and an
-undefined-memory bug in Concrete Dropout regularization is corrected.
-
 ## Citation and license
 
 Please cite the accompanying manuscript; metadata are in `CITATION.cff`.
